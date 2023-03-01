@@ -7,19 +7,19 @@ def BMI (heightIN, weightLB):
     bmi = weightLB/(heightIN**2) * 703
 
     if bmi >= 19 and bmi <= 24:
-       return 'Healthy :)', bmi
+       return 'NORMAL', bmi
 
     elif bmi >= 25 and bmi <= 29:
-        return 'OVERWEIGHT!', bmi
+        return 'OVERWEIGHT', bmi
 
     elif bmi >= 30 and bmi <= 39:
         return 'OBESE', bmi
 
     elif bmi > 39:
-        return 'OBESE ASF', bmi
+        return 'MORBIDLY OBESE', bmi
 
     elif bmi < 19:
-        return 'STICKMAN', bmi
+        return 'UNDERWEIGHT', bmi
         
 
 quote, bmi = BMI(heightIN, weightLB)
